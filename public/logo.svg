@@ -1,0 +1,5 @@
+<svg width="170" height="50" viewBox="0 0 170 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M30 10L40 20L30 30L20 25L25 15L30 10Z" fill="#0369a1"/>
+  <path d="M25 15L20 25L15 20L20 10L25 15Z" fill="#0284c7"/>
+  <text x="50" y="32" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#0369a1">ElectHER</text>
+</svg>
