@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 const RecentArticles = () => {
   const articles = [
     {
@@ -54,7 +56,8 @@ const RecentArticles = () => {
 
           <div className="grid md:grid-cols-2 gap-8">
             {articles.map((article) => (
-              <article key={article.id} className="bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+              <Link to={`/article/${article.id}`} key={article.id}>
+              <article className="bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
                 <div className="h-56 bg-cover bg-center" style={{ backgroundImage: `url(${article.image})` }}>
                   <div className="h-full bg-gradient-to-t from-black/60 to-transparent flex items-end p-6">
                     <span className="bg-secondary-600 text-white px-4 py-2 rounded-full text-sm font-semibold">
@@ -82,6 +85,7 @@ const RecentArticles = () => {
                   </button>
                 </div>
               </article>
+              </Link>
             ))}
           </div>
 

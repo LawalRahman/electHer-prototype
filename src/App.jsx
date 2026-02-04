@@ -1,5 +1,6 @@
-import { BrowserRouter as Router } from 'react-router-dom'
+import { Route, BrowserRouter as Router, Routes } from 'react-router-dom'
 import About from './components/About'
+import Article from './components/Article'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 import GetInvolved from './components/GetInvolved'
@@ -17,14 +18,21 @@ function App() {
         <div className="min-h-screen flex flex-col bg-white/95 backdrop-blur-sm">
         <Header />
         <main className="flex-grow">
-          <Hero />
-          <About />
-          <Mission />
-          <Programs />
-          <RecentArticles />
-          <Reports />
-          <GetInvolved />
-          <Contact />
+          <Routes>
+            <Route path="/" element={
+              <>
+                <Hero />
+                <About />
+                <Mission />
+                <Programs />
+                <RecentArticles />
+                <Reports />
+                <GetInvolved />
+                <Contact />
+              </>
+            } />
+            <Route path="/article/:id" element={<Article />} />
+          </Routes>
         </main>
         <Footer />
         </div>

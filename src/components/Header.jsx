@@ -13,8 +13,8 @@ const Header = () => {
   }
 
   return (
-    <header className="bg-white shadow-md sticky top-0 z-50">
-      <nav className="container mx-auto px-6 py-4">
+    <header className="bg-white/80 backdrop-blur-lg shadow-lg border-b border-gray-200/50 sticky top-0 z-50">
+      <nav className="container mx-auto px-6 py-5">
         <div className="flex items-center justify-between">
           <Link to="/" className="flex items-center space-x-2">
             <img src="/logo.svg" alt="electHER Nigeria" className="h-10" />
