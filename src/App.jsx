@@ -10,6 +10,7 @@ import Mission from './components/Mission'
 import Programs from './components/Programs'
 import RecentArticles from './components/RecentArticles'
 import Reports from './components/Reports'
+import Team from './components/Team'
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
                 <About />
                 <Mission />
                 <Programs />
+                <Team />
                 <RecentArticles />
                 <Reports />
                 <GetInvolved />
