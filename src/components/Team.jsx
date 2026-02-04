@@ -51,20 +51,20 @@ const Team = () => {
   ]
 
   return (
-    <section id="team" className="py-20 bg-cover bg-center bg-no-repeat relative" style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2400&auto=format&fit=crop)' }}>
+    <section id="team" className="py-12 sm:py-16 md:py-20 lg:py-24 bg-cover bg-center bg-no-repeat relative" style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2400&auto=format&fit=crop)' }}>
       <div className="absolute inset-0 bg-secondary-900/90"></div>
-      <div className="container mx-auto px-6 relative z-10">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">Meet Our Team</h2>
-          <p className="text-xl text-blue-100 max-w-3xl mx-auto">
+      <div className="container mx-auto px-4 sm:px-6 relative z-10">
+        <div className="text-center mb-10 sm:mb-12 md:mb-16">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-3 sm:mb-4">Meet Our Team</h2>
+          <p className="text-base sm:text-lg md:text-xl text-blue-100 max-w-3xl mx-auto px-4">
             Dedicated professionals working together to empower women and transform Nigeria's political landscape
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
           {team.map((member, index) => (
             <div key={index} className="bg-white/95 backdrop-blur-sm rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl hover:scale-105 transition-all duration-300">
-              <div className="relative h-64 overflow-hidden">
+              <div className="relative h-48 sm:h-56 md:h-64 overflow-hidden">
                 <img 
                   src={member.image} 
                   alt={member.name}
@@ -73,10 +73,10 @@ const Team = () => {
                 <div className="absolute inset-0 bg-gradient-to-t from-secondary-900/80 to-transparent"></div>
               </div>
               
-              <div className="p-6">
-                <h3 className="text-2xl font-bold text-gray-800 mb-2">{member.name}</h3>
-                <p className="text-secondary-600 font-semibold mb-3">{member.role}</p>
-                <p className="text-gray-600 mb-4 leading-relaxed">{member.bio}</p>
+              <div className="p-5 sm:p-6">
+                <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-gray-800 mb-2">{member.name}</h3>
+                <p className="text-sm sm:text-base text-secondary-600 font-semibold mb-3">{member.role}</p>
+                <p className="text-sm sm:text-base text-gray-600 mb-4 leading-relaxed">{member.bio}</p>
                 
                 <div className="flex space-x-4">
                   <a 

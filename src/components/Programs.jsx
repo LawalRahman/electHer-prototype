@@ -39,22 +39,22 @@ const Programs = () => {
   ]
 
   return (
-    <section id="programs" className="relative py-24 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1559136555-9303baea8ebd?q=80&w=2400&auto=format&fit=crop)' }}>
+    <section id="programs" className="relative py-12 sm:py-16 md:py-20 lg:py-24 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1559136555-9303baea8ebd?q=80&w=2400&auto=format&fit=crop)' }}>
       <div className="absolute inset-0 bg-gradient-to-br from-white/97 via-gray-50/97 to-white/97"></div>
-      <div className="container mx-auto px-6 relative z-10">
+      <div className="container mx-auto px-4 sm:px-6 relative z-10">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold text-center mb-4 text-gray-800">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-3 md:mb-4 text-gray-800">
             Our Programs
           </h2>
-          <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
+          <p className="text-center text-base sm:text-lg text-gray-600 mb-8 md:mb-12 max-w-2xl mx-auto px-4">
             We offer comprehensive programs designed to support women at every stage of their political journey
           </p>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
             {programs.map((program, index) => (
-              <div key={index} className="bg-white rounded-2xl shadow-xl p-8 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100">
-                <div className="text-6xl mb-6">{program.icon}</div>
-                <h3 className="text-2xl font-bold mb-4 text-gray-800">{program.title}</h3>
-                <p className="text-gray-600 mb-4">{program.description}</p>
+              <div key={index} className="bg-white rounded-2xl shadow-xl p-6 sm:p-8 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100">
+                <div className="text-4xl sm:text-5xl lg:text-6xl mb-4 sm:mb-6">{program.icon}</div>
+                <h3 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4 text-gray-800">{program.title}</h3>
+                <p className="text-sm sm:text-base text-gray-600 mb-4">{program.description}</p>
                 <div className="border-t border-gray-200 pt-4">
                   <ul className="space-y-2">
                     {program.highlights.map((highlight, idx) => (

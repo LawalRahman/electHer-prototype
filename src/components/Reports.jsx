@@ -50,32 +50,32 @@ const Reports = () => {
   }
 
   return (
-    <section id="reports" className="relative py-24 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=2400&auto=format&fit=crop)' }}>
+    <section id="reports" className="relative py-12 sm:py-16 md:py-20 lg:py-24 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=2400&auto=format&fit=crop)' }}>
       <div className="absolute inset-0 bg-gradient-to-br from-secondary-900/92 via-secondary-800/92 to-secondary-900/92"></div>
-      <div className="container mx-auto px-6 relative z-10">
+      <div className="container mx-auto px-4 sm:px-6 relative z-10">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-5xl font-bold mb-6 text-white">
+          <div className="text-center mb-10 sm:mb-12 md:mb-16">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 text-white">
               Annual Reports
             </h2>
-            <p className="text-xl text-gray-200 max-w-3xl mx-auto">
+            <p className="text-base sm:text-lg md:text-xl text-gray-200 max-w-3xl mx-auto px-4">
               Download our comprehensive annual reports to see the impact we're making in advancing women's political participation
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
             {reports.map((report) => (
               <div key={report.id} className="bg-white rounded-2xl shadow-2xl overflow-hidden hover:shadow-3xl transition-all duration-300 transform hover:-translate-y-2">
-                <div className="bg-gradient-to-br from-secondary-600 to-secondary-700 p-8 text-white">
+                <div className="bg-gradient-to-br from-secondary-600 to-secondary-700 p-6 sm:p-8 text-white">
                   <div className="flex items-center justify-between mb-4">
-                    <span className="text-6xl font-bold opacity-30">{report.year}</span>
-                    <div className="bg-white/20 backdrop-blur-sm rounded-xl p-4">
-                      <svg className="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <span className="text-4xl sm:text-5xl lg:text-6xl font-bold opacity-30">{report.year}</span>
+                    <div className="bg-white/20 backdrop-blur-sm rounded-xl p-3 sm:p-4">
+                      <svg className="w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                       </svg>
                     </div>
                   </div>
-                  <h3 className="text-2xl font-bold mb-2">{report.title}</h3>
+                  <h3 className="text-xl sm:text-2xl font-bold mb-2">{report.title}</h3>
                   <div className="flex items-center text-sm opacity-90">
                     <span>{report.pages} pages</span>
                     <span className="mx-2">•</span>
@@ -83,8 +83,8 @@ const Reports = () => {
                   </div>
                 </div>
                 
-                <div className="p-8">
-                  <p className="text-gray-600 mb-6 leading-relaxed">
+                <div className="p-6 sm:p-8">
+                  <p className="text-sm sm:text-base text-gray-600 mb-5 sm:mb-6 leading-relaxed">
                     {report.description}
                   </p>
                   

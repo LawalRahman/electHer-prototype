@@ -24,19 +24,19 @@ const Contact = () => {
   }
 
   return (
-    <section id="contact" className="relative py-24 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=2400&auto=format&fit=crop)' }}>
+    <section id="contact" className="relative py-12 sm:py-16 md:py-20 lg:py-24 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=2400&auto=format&fit=crop)' }}>
       <div className="absolute inset-0 bg-gradient-to-br from-gray-900/90 via-gray-800/90 to-gray-900/90"></div>
-      <div className="container mx-auto px-6 relative z-10">
+      <div className="container mx-auto px-4 sm:px-6 relative z-10">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-5xl font-bold text-center mb-6 text-white">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-4 sm:mb-6 text-white">
             Contact Us
           </h2>
-          <p className="text-center text-gray-200 text-lg mb-16 max-w-2xl mx-auto">
+          <p className="text-center text-gray-200 text-base sm:text-lg mb-10 sm:mb-12 md:mb-16 max-w-2xl mx-auto px-4">
             Have questions or want to learn more about our work? We'd love to hear from you.
           </p>
-          <div className="grid md:grid-cols-2 gap-12">
-            <div className="bg-white/95 backdrop-blur-sm rounded-2xl p-10 shadow-2xl">
-              <form onSubmit={handleSubmit} className="space-y-6">
+          <div className="grid md:grid-cols-2 gap-8 md:gap-12">
+            <div className="bg-white/95 backdrop-blur-sm rounded-2xl p-6 sm:p-8 lg:p-10 shadow-2xl">
+              <form onSubmit={handleSubmit} className="space-y-5 sm:space-y-6">
                 <div>
                   <label htmlFor="name" className="block text-sm font-semibold text-gray-700 mb-2">
                     Full Name
@@ -48,7 +48,7 @@ const Contact = () => {
                     value={formData.name}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-secondary-600 focus:border-transparent"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-secondary-600 focus:border-transparent text-base min-h-[48px]"
                     placeholder="Your name"
                   />
                 </div>
@@ -63,7 +63,7 @@ const Contact = () => {
                     value={formData.email}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-secondary-600 focus:border-transparent"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-secondary-600 focus:border-transparent text-base min-h-[48px]"
                     placeholder="your.email@example.com"
                   />
                 </div>
@@ -78,7 +78,7 @@ const Contact = () => {
                     value={formData.subject}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-secondary-600 focus:border-transparent"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-secondary-600 focus:border-transparent text-base min-h-[48px]"
                     placeholder="How can we help?"
                   />
                 </div>
@@ -93,7 +93,7 @@ const Contact = () => {
                     onChange={handleChange}
                     required
                     rows={5}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-secondary-600 focus:border-transparent resize-none"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-secondary-600 focus:border-transparent resize-none text-base"
                     placeholder="Your message..."
                   />
                 </div>

@@ -41,40 +41,40 @@ const RecentArticles = () => {
   ]
 
   return (
-    <section id="articles" className="relative py-24 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1504711434969-e33886168f5c?q=80&w=2400&auto=format&fit=crop)' }}>
+    <section id="articles" className="relative py-12 sm:py-16 md:py-20 lg:py-24 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1504711434969-e33886168f5c?q=80&w=2400&auto=format&fit=crop)' }}>
       <div className="absolute inset-0 bg-gradient-to-br from-white/97 via-gray-50/97 to-white/97"></div>
-      <div className="container mx-auto px-6 relative z-10">
+      <div className="container mx-auto px-4 sm:px-6 relative z-10">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-5xl font-bold mb-6 text-gray-800">
+          <div className="text-center mb-10 sm:mb-12 md:mb-16">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 text-gray-800">
               Latest News & Articles
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-3xl mx-auto px-4">
               Stay informed with our latest stories, insights, and updates on women's political empowerment across Nigeria
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid sm:grid-cols-2 gap-6 md:gap-8">
             {articles.map((article) => (
               <Link to={`/article/${article.id}`} key={article.id}>
               <article className="bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
-                <div className="h-56 bg-cover bg-center" style={{ backgroundImage: `url(${article.image})` }}>
-                  <div className="h-full bg-gradient-to-t from-black/60 to-transparent flex items-end p-6">
-                    <span className="bg-secondary-600 text-white px-4 py-2 rounded-full text-sm font-semibold">
+                <div className="h-48 sm:h-56 md:h-64 bg-cover bg-center" style={{ backgroundImage: `url(${article.image})` }}>
+                  <div className="h-full bg-gradient-to-t from-black/60 to-transparent flex items-end p-4 sm:p-6">
+                    <span className="bg-secondary-600 text-white px-3 py-1.5 sm:px-4 sm:py-2 rounded-full text-xs sm:text-sm font-semibold">
                       {article.category}
                     </span>
                   </div>
                 </div>
-                <div className="p-8">
-                  <div className="flex items-center text-sm text-gray-500 mb-4">
+                <div className="p-5 sm:p-6 md:p-8">
+                  <div className="flex items-center text-xs sm:text-sm text-gray-500 mb-3 sm:mb-4">
                     <span>{article.date}</span>
                     <span className="mx-2">•</span>
                     <span>{article.author}</span>
                   </div>
-                  <h3 className="text-2xl font-bold text-gray-800 mb-3 hover:text-secondary-600 transition-colors">
+                  <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-gray-800 mb-2 sm:mb-3 hover:text-secondary-600 transition-colors">
                     {article.title}
                   </h3>
-                  <p className="text-gray-600 mb-6 leading-relaxed">
+                  <p className="text-sm sm:text-base text-gray-600 mb-4 sm:mb-6 leading-relaxed">
                     {article.excerpt}
                   </p>
                   <button className="text-secondary-600 font-semibold hover:text-secondary-700 transition-colors inline-flex items-center group">
@@ -89,8 +89,8 @@ const RecentArticles = () => {
             ))}
           </div>
 
-          <div className="text-center mt-12">
-            <button className="bg-gradient-to-r from-secondary-600 to-secondary-700 text-white px-10 py-4 rounded-full font-bold text-lg hover:from-secondary-700 hover:to-secondary-800 transition-all shadow-xl hover:shadow-2xl transform hover:scale-105">
+          <div className="text-center mt-8 sm:mt-10 md:mt-12">
+            <button className="bg-gradient-to-r from-secondary-600 to-secondary-700 text-white px-8 sm:px-10 py-3 sm:py-4 rounded-full font-bold text-base sm:text-lg hover:from-secondary-700 hover:to-secondary-800 transition-all shadow-xl hover:shadow-2xl transform hover:scale-105 min-h-[48px]">
               View All Articles
             </button>
           </div>

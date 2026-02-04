@@ -1,15 +1,15 @@
 const About = () => {
   return (
-    <section id="about" className="relative py-24 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1573164713988-8665fc963095?q=80&w=2400&auto=format&fit=crop)' }}>
+    <section id="about" className="relative py-12 sm:py-16 md:py-20 lg:py-24 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1573164713988-8665fc963095?q=80&w=2400&auto=format&fit=crop)' }}>
       <div className="absolute inset-0 bg-gradient-to-br from-white/95 via-gray-50/95 to-white/95"></div>
-      <div className="container mx-auto px-6 relative z-10">
+      <div className="container mx-auto px-4 sm:px-6 relative z-10">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-4xl font-bold text-center mb-12 text-gray-800">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-8 md:mb-12 text-gray-800">
             About electHER Nigeria
           </h2>
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-xl">
-              <p className="text-lg text-gray-700 mb-6">
+          <div className="grid md:grid-cols-2 gap-6 md:gap-8 lg:gap-12 items-center">
+            <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 sm:p-8 shadow-xl">
+              <p className="text-base sm:text-lg text-gray-700 mb-4 sm:mb-6">
                 electHER Nigeria is a non-governmental organization dedicated to transforming the political landscape by empowering women to take leadership roles in governance and public service.
               </p>
               <p className="text-lg text-gray-700 mb-6">
